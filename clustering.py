@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from ast import literal_eval
 import os
 
-# Load data
+#  Load data
 datafile_path = "fine_food_reviews_with_embeddings.csv"
 df = pd.read_csv(datafile_path)
 df["embedding"] = df.embedding.apply(literal_eval).apply(np.array)
